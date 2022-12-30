@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Pinyon+Script&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: plum;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: purple;
+    font-size: 18px;
+    margin-right: 30px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: black;
+}
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: purple;
+    font-family: 'Pinyon Script';
+}
+
+.navbar .logo a:hover{
+    color: black;
+}
+
+.menu-btn{
+    color: purple;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/*home*/
+.home{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 80px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    font-style: italic;
+    color: plum;
+    font-weight: 500;
+
+}
+
+.home .home-content .icon-hero{
+    display: flex;
+    padding-top: 40px;
+    color: purple;
+}
+
+.home .home-content .icon-hero a{
+    width: 140px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: plum;
+    border-radius: 24px;
+    margin: 24px 16px;
+}
+
+.home .home-content .adding{
+    padding-top: 40px;
+}
+
+.home .home-content .adding h3{
+    padding-top: 4px;
+}
+
+.home .home-content .adding h3 span{
+    font-size: 28px;
+}
+
+.home .home-content .btn-1{
+    display: inline-block;
+    background: plum;
+    font-size: 18px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: 2px solid purple;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.home .home-content .btn-1:hover{
+    background: none;
+    border-color: plum;
+}
+
+/*About*/
+.about{
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "&&";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 16px;
+    color: purple;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-left: -3;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: plum;
+    color: purple;
+    font-size: 18px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 40px;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid purple;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: purple;
+    background: none;
+}
+
+/*Projects*/
+.project{
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 200px;
+}
+.project .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.project .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.project .title::after{
+    content: "&&";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 16px;
+    color: purple;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 52px;
+    padding-top: 24px;
+}
+.project-box{
+    position: relative;
+    height: 480px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.project-overlay{
+    position: absolute;
+    top: -100;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(234, 45%, 16%, 0.7);
+    height: 100%;
+    width: 100%;
+}
+.project-overlay h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.project-overlay i{
+    font-size: 28px;
+    width: 64px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: plum;
+    color: white;
+    border-radius: 12px;
+    margin: 12px 8px;
+}
+.project-box:hover .project-overlay{
+    top:0;
+    transition: 0.6s all ease;
+}
+.project-button{
+    display: inline-block;
+    background: plum;
+    color: purple;
+    font-size: 18px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 40px;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid purple;
+    transition: all 0.3s ease;
+}
+.project-button:hover{
+    color: purple;
+    background: none;
+}
+
+/*Project Page*/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+#search-container{
+    margin: 1em 0;
+}
+#search-container input{
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid purple;
+    padding: 1em 0.3em;
+}
+#search-container input:focus{
+    border-bottom-color: black;
+    
+}
+
+/*Footer*/
+footer{
+    padding-top: 240px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+footer .span{
+    color: purple;
+    font-style: 'Ubuntu', sans-serif;
+}
+footer .design span{
+    color: purple;
+    font-weight: 800;
+}
+footer .design span:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/*Responsive media query*/
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        width: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .adding h3{
+        font-size: 16px;
+    }
+    .icon-hero{
+        font-size: 14px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: plum;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    .home .home-content .text-2{
+        font-size: 48px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content .btn-1{
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content .btn-1{
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .home .home-content .btn-1{
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .adding h3{
+        font-size: 12px;
+    }
+    .icon-hero{
+        font-size: 12px;
+        width: 470px;
+    }
+}
